@@ -1,0 +1,17 @@
+aside{
+    padding: 10px;
+    height: 60vh;
+}
+.form-check-input-side:checked{
+    background-color: black!important;
+    border-color: black!important;
+}
+.form-check-input-side:focus{
+    box-shadow: none!important;
+    border-color: #dee2e6!important;
+}
+@media(max-width:992px){
+    aside{
+        display: none;
+    }
+}

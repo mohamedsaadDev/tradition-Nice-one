@@ -1,0 +1,124 @@
+.continer-singleproduct{
+    width: 100%;
+    padding:40px 40px;
+    display: flex;
+    justify-content: center;
+}
+.continer-img-singleproduct{
+    width: 60%;
+}
+.mainimg-singleproduct{ 
+    width: 70%;
+    height: 80%;
+    min-width: 80%;
+    object-fit:contain;
+    margin: 10px auto;
+}
+.subimg-singleproduct{
+    width:80px ;
+    display: block;
+    border: 1px solid var(--border-color);
+    margin: 10px 0;
+    cursor: pointer;
+}
+.container-info-singleprodect{
+    padding: 40px 30px;
+    margin:0 10px;
+}
+.imgbrand-singleproduct{
+    width: 100px;
+}
+.original-singleproduct{
+    color: #73be22;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 14px;
+}
+.type-singleproduct{
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: darkblue;
+    display: inline-block;
+}
+.continer-ratin-singleproduct{
+    margin-top: 25px;
+}
+.continer-ratin-singleproduct p:first-child{
+    color: rgb(255,181,3);
+}
+.title-singleproduct{
+    font-weight: 600;
+    font-size: 17px;
+}
+.Discount-singleproduct{
+    color: #cf142b;
+    background-color: #ffdddd;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: din-next-lt-w23-bold;
+    font-weight: 700;
+}
+.oldprice-singleproduct, .TaxStatus{
+    color:#797979 ;
+    font-weight: 700;
+}
+.TaxStatus{
+    font-size: 14px;
+}
+.details-singleproduct{
+    background-color:rgba(254,174,187,.2);
+    padding: 10px 10px ;
+    margin: 20px 0 0 0 ;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+}
+.btn-singleproduct{
+    margin-top: 20px;
+    height: 50px;
+    width: 100% !important;
+}
+.iconheart-singleproduct{
+    cursor: pointer;
+    font-size: 20px;
+}
+@media(max-width:992px){
+    .type-singleproduct {
+        margin: 0 2px;
+    }
+    .container-info-singleprodect{
+        padding: 35px 20px;
+    }
+}
+@media(max-width:768px){
+    .continer-singleproduct{
+        display: block;
+    }
+    .continer-img-singleproduct{
+        width: 100%;
+    }
+    .mainimg-singleproduct{
+        width: 90%;
+    }
+}
+@media(max-width:480px){
+    .continer-singleproduct{
+        display: block;
+        padding: 10px;
+    }
+    .subimg-singleproduct{
+        width: 65px;
+    }
+    .continer-img-singleproduct{
+        width: 100%;
+    }
+    .container-info-singleprodect{
+        padding: 20px 5px;
+        margin: 0;
+    }
+    .details-singleproduct{
+        font-size: 12px;
+    }
+}

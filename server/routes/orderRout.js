@@ -1,0 +1,10 @@
+const express = require('express')
+const router = express.Router()
+const ordersControllers = require("../controllers/ordersControllers")
+const veryfiytoken = require('../middleware/veryfiytoken')
+const  allowedTo = require('../middleware/allowedTo')
+const userRoles = require('../utils/usersRole')
+router.route('/').get(veryfiytoken,ordersControllers.getAllOrders)
+router.route('/').post(ordersControllers.addOrder)
+router.route('/:orderId').get(allowedTo(userRoles.MANGER),veryfiytoken,ordersControllers.deleteOrder)
+module.exports = router;

@@ -1,0 +1,142 @@
+footer{
+    width: 100%;
+}
+.middle-footer{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-items-footer{
+    display: flex;
+}
+.icon-middle-footer{
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 5px 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fa-facebook-f{
+    padding: 12px 15px;
+}
+.title-middle-footer{
+    font-weight: bold;      
+}
+.item-middle-footer{
+    padding: 3px 0;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+.item-middle-footer:hover{
+    border-bottom: 2px solid black;
+}
+.img-middle-footer{
+    width: 180px;
+    height: 45px;
+    margin: 10px 0;
+}
+.end-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px ;
+    border-top: 1px solid #ededed ;
+}
+.img-endfooter{
+    width: 80px;
+    object-fit:contain;
+}
+.vat-endfooter{
+    font-size: 12px;
+    color: #ababab;
+}
+.titleCopyright-endfooter{
+    font-size: 12px;
+}
+.visa-endfooter{
+    width: 70px;
+    margin: 0 5px;
+}
+@media(max-width:992px){
+    .wrapper-items-footer{
+        display: none;
+    }
+    .wrapper-icons{
+        display: flex;
+    }
+    .wrapper-icons section{
+        display: flex;
+        width: auto;
+    }
+    .middle-footer div{
+        margin: 0 auto;
+    }
+    .img-endfooter{
+        display: none;
+    }
+    .visa-endfooter{
+        width: 60px;
+    }
+    .titleCopyright-endfooter,.vat-endfooter {
+        font-size: 10px;
+    }
+}
+@media(max-width:768px){
+    .icon-middle-footer{
+        padding: 10px;
+        margin: 5px;
+    }
+    .title-middle-footer{
+        font-size: 19px;
+    }
+    .img-middle-footer{
+        display: none;
+    }
+    .end-footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media(max-width:580px){
+    .icon-middle-footer{
+        padding: 10px;
+        margin: 5px;
+    }
+    .title-middle-footer{
+        font-size: 15px;
+    }
+    .img-middle-footer{
+        width: 140px;
+        height: 40px;
+    }
+    .middle-footer div{
+        text-align: center;
+    }
+}
+@media(max-width:460px){
+    .visa-endfooter{
+        width: 50px;
+    }
+    .icon-middle-footer{
+        margin: 3px;
+    }
+    .img-middle-footer{
+        margin-bottom: 0;
+    }
+    .end-footer{
+        padding: 10px 0;
+    }
+    .middle-footer{
+        flex-direction: column;
+        padding: 15px;
+    }
+    .middle-footer div{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:360px){
+    .visa-endfooter{
+        width: 45px;
+    }
+}

@@ -1,0 +1,110 @@
+.offcanvas-cart{
+    width: 550px!important;
+}
+.offcanvas-title{
+    font-weight: 700!important;
+    font-size: 24px!important;
+}
+.share-cart{
+    cursor: pointer;
+}
+.offcanvas-body-cart{
+    background-color: rgb(239, 239, 239);
+}
+.img-emptycart{
+    width: 100px;
+}
+.textone-emptycart{
+    font-weight: 700;
+    margin: 10px 0 !important;
+}
+.texttow-emptycart{
+    font-size: 15px;
+    color: #757575;
+    padding: 10px 0;
+}
+.wrapper-product-cart{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.container-produectcart{
+    margin: 10px;
+}
+.offcanvas-header .btn-close{
+    box-shadow: none!important;
+}
+.btn-cart{
+    width: 92%!important;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    font-size: 17px!important;
+}
+.title-midle-cart{
+    font-weight: bold;
+    font-size: 17px;
+}
+.product-cart{
+    background-color:#ffffff ;
+    padding: 20px;
+    display: flex;
+    border-bottom: 2px solid #f3f2f2;
+}
+.img-product-cart{
+    width: 110px;
+}
+.continer-btn-productcart{
+    border: 1px solid var(--border-color);
+    height: 35px;
+    width: 80px;
+    margin: auto 0;
+}
+.icon-trash-cart{
+    font-size: 20px;
+    cursor: pointer;
+}
+.continer-btn-productcart{
+    text-align: center;
+}
+.btn-productcart{
+    background-color: transparent;
+    text-align: center;
+}
+.price-product-cart{
+    font-weight: 700;
+    color: #d0021b;
+}
+@media(max-width:768px){
+    .wrapper-product-cart{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:576px){
+    .container-produectcart {
+        margin: 7px 0;
+        width: 95%;
+    }
+    .info-product-cart div h6{
+        font-size: 14px;
+    }
+    .product-cart{
+        padding: 10px;
+    }
+}
+@media(max-width:350px){
+    .wrapper-product-cart{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .info-product-cart div h6{
+        font-size: 10px;
+    }
+    .product-cart{
+        padding: 10px 5px;
+    }
+    .icon-trash-cart{
+        font-size: 15px;
+    }
+    .price-product-cart{
+        font-size: 15px;
+    }
+}

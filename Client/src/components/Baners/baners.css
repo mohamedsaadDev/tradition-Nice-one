@@ -1,0 +1,22 @@
+.baners{
+    width: 100%;
+}
+.baners div{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+.baners div img{
+    width: 95%;
+    border-radius: 5px;
+}
+@media(max-width:992px){
+    .baners div{
+        margin: 10px 0;
+    }
+}
+@media(max-width:768px){
+    .baners div{
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,15 @@
+.breadcrumb-item+.breadcrumb-item::before {
+    font-size: 0.7em!important;
+    color:rgba(0,0,0,.45)!important;
+    margin-top: 5px;
+}
+@media(max-width:576px){
+    .Breadcrumb-Hide{
+        display: none;
+    }
+}
+[dir="rtl"]
+.breadcrumb-item+.breadcrumb-item::before{
+    float: right!important;
+    padding: 0 0.5rem!important;
+}

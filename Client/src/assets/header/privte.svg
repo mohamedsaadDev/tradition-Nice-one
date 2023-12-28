@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>security</title>
+    <g id="Website-Desktop-pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Edit-profile" transform="translate(-1543.000000, -507.000000)">
+            <g id="Group-4" transform="translate(1353.914519, 267.960223)">
+                <g id="Rectangle-2" transform="translate(0.436452, 0.000000)">
+                    <g id="Group-46" transform="translate(90.649029, 67.039777)">
+                        <g id="Orion_security" transform="translate(97.528938, 171.214465)">
+                            <rect id="Rectangle" x="0" y="0" width="29" height="29"></rect>
+                            <g id="icon" transform="translate(8.000000, 5.000000)" stroke="#202020" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2.21666667,7.85333333 L2.21666667,4.11666667 C2.21666667,1.84309445 4.05976111,8.8817842e-15 6.33333333,8.8817842e-15 C8.60690555,8.8817842e-15 10.45,1.84309445 10.45,4.11666667 L10.45,7.85333333" id="Path"></path>
+                                <circle id="Oval" cx="6.33333333" cy="12.6666667" r="6.33333333"></circle>
+                                <path d="M6.96666667,13.6166667 C6.96666667,13.966447 6.68311367,14.25 6.33333333,14.25 C5.98355299,14.25 5.7,13.966447 5.7,13.6166667 L5.7,11.7166667 C5.7,11.3668863 5.98355299,11.0833333 6.33333333,11.0833333 C6.68311367,11.0833333 6.96666667,11.3668863 6.96666667,11.7166667 L6.96666667,13.6166667 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

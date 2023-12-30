@@ -26,7 +26,7 @@ const Order = () => {
     }
     const sendOrder =async()=>{
         try{
-        const res = await fetch('http://localhost:5000/api/orders/',{
+        const res = await fetch('https://tradition-nice-one-api.vercel.app/api/orders/',{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(order)
@@ -53,7 +53,7 @@ const Order = () => {
                         cartitems.length ===0 ? <p className='text-period-orders'>{t('Noitems')}</p>:
                         cartitems.map((item)=>
                         <div key={item._id} className='d-flex py-2 container-info'>
-                            <img crossOrigin='anonymous' className='img-order' src={`http://localhost:5000/${item.img1}`} alt="" />
+                            <img crossOrigin='anonymous' className='img-order' src={`https://tradition-nice-one-api.vercel.app${item.img1}`} alt="" />
                             <div className='px-2' >
                                 <p className='m-0 titleproduct-order'>{item.title}</p>
                                 <span className='m-0' >{t('Quantity')} {item.quantity}</span>

@@ -68,7 +68,7 @@ useEffect(()=>{
     return (
         <>
         <div className='wrapper-navMobile'>
-            <Button variant="transparent" onClick={handleShow} className="me-2"><i className="fa-solid fa-bars icon-mobile-menu"></i></Button>
+            <Button variant="transparent" onClick={handleShow} className="me-2 btn-nav-mobile"><i className="fa-solid fa-bars icon-mobile-menu"></i></Button>
             <Link to='/'><img className='logo-mobile' src={logo} alt="" /></Link>
             <Offcanvas className='container-navMobile' key={i18n.language ==="en"?"start":"end"} placement={i18n.language ==="en"?"start":"end"} show={show} onHide={handleClose} >
                 <Offcanvas.Header className={showSubItem&&'d-none'} closeButton>
@@ -79,7 +79,7 @@ useEffect(()=>{
                     showSubItem?
                     <>
                         <div className='wrapper-subitem'>
-                            <button className='bg-light w-100 py-3 t-start h-auto  btn-subitem'  onClick={()=>setshowSubItem(false)}>
+                            <button className='bg-light w-100 py-3 t-start h-auto text-dark  btn-subitem'  onClick={()=>setshowSubItem(false)}>
                                 <i className="fa-solid fa-arrow-left mx-2"></i>
                                 {titleitem}
                             </button>

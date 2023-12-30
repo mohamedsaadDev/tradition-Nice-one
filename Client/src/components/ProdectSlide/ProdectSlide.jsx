@@ -9,11 +9,13 @@ import { useSelector } from 'react-redux'
 import { changelanguge } from '../../Func/changelanguge';
 const ProdectSlide = () => {
     const {i18n,t} = useTranslation()
-    const {products}=useSelector((state)=>state.products)
+    const {products, loading}=useSelector((state)=>state.products)
     const extractedproducts =changelanguge(products,i18n)
     return (
     <>
-    <div className='wrapper-produectslide'>
+    {
+        loading? <div className='w-100 text-center py-2 text-dark '>loding...</div>:
+        <div className='wrapper-produectslide'>
     <h2>{t('EndofYearTopDeals')}</h2>
         <Swiper
             slidesPerView={6}
@@ -51,6 +53,7 @@ const ProdectSlide = () => {
             )}
         </Swiper>
         </div>
+    }
     </>
 )
 }

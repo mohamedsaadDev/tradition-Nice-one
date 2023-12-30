@@ -78,5 +78,15 @@
     "SearchForproduct":"ابحث عن منتج ؟",
     "logout":"تسجيل الخروج",
     "EndofYearTopDeals":"اقوى عروض نهاية السنة",
-    "clickhereformoreof":"انقر هنا للمزيد من"
+    "clickhereformoreof":"انقر هنا للمزيد من",
+    "Theemailisshort":"الايميل قصير",
+    "EmailisRequired":"الايميل مطلوب",
+    "Theemailislong":"الايميل طويل !",
+    "Enteravalidemailaddress":"هذا الايميل غير صالح !",
+    "Thepasswordisshort":"كلمة المرور قصيره !",
+    "Thepasswordislong":"كلمة المرور طويله !",
+    "passwordisRequired":"كلمة المرور مطلوبه",
+    "Thenameisshort":"الاسم قصير",
+    "Thenameislong":"الاسم طويل !",
+    "Required":"مطلوب"
 }

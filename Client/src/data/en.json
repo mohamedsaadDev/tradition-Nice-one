@@ -78,7 +78,15 @@
     "SearchForproduct":"Search For product ?",
     "logout":"Logout",
     "EndofYearTopDeals":"End of Year Top Deals",
-    "clickhereformoreof":"click here for more of"
-
-
+    "clickhereformoreof":"click here for more of",
+    "Theemailisshort":"'The email is short!",
+    "EmailisRequired":"Email is Required",
+    "Theemailislong":"The email is long !",
+    "Enteravalidemailaddress":"Enter a valid email address !",
+    "Thepasswordisshort":"The password is short !",
+    "Thepasswordislong":"The password is long !",
+    "passwordisRequired":"password is Required",
+    "Thenameisshort":"The name is short",
+    "Thenameislong":"The name is long!",
+    "Required":"Required"
 }

@@ -36,7 +36,7 @@ const Cart = () => {
                     {
                         cartitems.map((item,index)=>
                         <div key={index} className='product-cart my-2'>
-                            <img className='img-product-cart' src={`http://localhost:5000/${item.img1}`} crossOrigin="anonymous" alt="" />
+                            <img className='img-product-cart' src={`https://tradition-nice-one-api.vercel.app${item.img1}`} alt="" />
                             <div className='info-product-cart px-3'>
                                 <div className='d-flex justify-content-around  '>
                                     <h6>{item.title}</h6>
@@ -48,9 +48,9 @@ const Cart = () => {
                                         <p className='price-product-cart'>{t('SAR')} {item.price}</p>
                                     </div>
                                     <div className='d-flex align-items-center continer-btn-productcart p-0'>
-                                        <button onClick={()=>dispatch(cartaction.addtocart(item))} className='btn-productcart m-0 col'>+</button>
-                                        <span className='m-0 col'>{item.quantity}</span>
-                                        <button onClick={()=>dispatch(cartaction.decrease(item))} className='btn-productcart m-0 col'>-</button>
+                                        <button onClick={()=>dispatch(cartaction.addtocart(item))} className='btn-productcart m-0 col text-dark'>+</button>
+                                        <span className='m-0 col text-dark'>{item.quantity}</span>
+                                        <button onClick={()=>dispatch(cartaction.decrease(item))} className='btn-productcart m-0 col text-dark'>-</button>
                                     </div>
                                 </div>
                             </div>

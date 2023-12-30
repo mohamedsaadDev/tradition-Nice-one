@@ -1,3 +1,8 @@
+.btn-nav-mobile:focus,
+.btn-nav-mobile:hover,
+.btn-nav-mobile{
+    border: none !important;
+}
 .container-navMobile{
     width: 280px!important;
 }

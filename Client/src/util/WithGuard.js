@@ -6,6 +6,4 @@ const WithGuard = (Component) => {
     }
     return Wrapper
 }
-
-
 export default WithGuard    

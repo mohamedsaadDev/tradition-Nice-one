@@ -32,7 +32,7 @@ const App = () => {
           <Route path='/makeup' element={<Products type={"Makeup"}/>}/> 
           <Route path='/devices' element={<Products type={"Devices"}/>}/>
           <Route path='/product/:id' element={<Singleproduct/>}/>
-          <Route path='/Orders' element={<Order name="mohamed"/>}/>
+          <Route path='/Orders' element={<Order/>}/>
       </Routes>
       <React.Suspense>
         <Footerlazy/>

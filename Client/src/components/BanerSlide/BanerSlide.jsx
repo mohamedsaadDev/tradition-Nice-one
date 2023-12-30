@@ -20,7 +20,7 @@ const BanerSlide = ({banerSlide}) => {
                 reverseDirection: i18n.language ==="en"?false:true,
             }}>
             {banerSlide.map((onebanerSlide,index)=>
-            <SwiperSlide className='swiper-slide-baner' key={index}><img className='oneimg-baner-slide' src={onebanerSlide} alt="" /></SwiperSlide>
+            <SwiperSlide className='swiper-slide-baner' key={index}><img loading='lazy' className='oneimg-baner-slide' src={onebanerSlide} alt="" /></SwiperSlide>
             )}
         </Swiper>
     )

@@ -39,16 +39,3 @@ export const cartSlice = createSlice({
 )
 export const cartaction = cartSlice.actions;
 export const cartReducer = cartSlice.reducer;
-/* updateQuantity: (state, action) => {
-      const { id, newQuantity } = action.payload;
-      const itemToUpdate = state.items.find(item => item.id === id);
-
-      if (itemToUpdate) {
-        itemToUpdate.quantity = newQuantity;
-      }
-      //const {quantity } = action.payload;
-                //isExistcart.quantity = quantity;
-                //state.cartitems = [...state.cartitems,newItem]
-                //state.cartitems = state.cartitems.map(item => item.quantity === newItem.quantity ? newItem : item)
-                //isExistcart.quantity.quantity
-      */

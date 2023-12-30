@@ -4,30 +4,30 @@ import { useDispatch } from 'react-redux';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
-const registersSchema =Yup.object().shape({
-  firstName: Yup
-    .string()
-    .min(3, 'The name is short!')
-    .max(10, 'The name is long!')
-    .required('Required'),
-    LastName: Yup.string()
-    .min(3, 'The name is short!')
-    .max(10, 'The name is long!')
-    .required('Required'),
-    email: Yup
-    .string()
-    .min(8, 'The email is short!')
-    .max(40, 'The email is long!')
-    .email('Enter a valid email address')
-    .required('Email is Required'),
-    password: Yup
-    .string()
-    .min(8, 'The password is short!')
-    .max(25, 'The password is long!')
-    .required('password is Required'),
-});
 const Registers = ()=> {
   const { t } = useTranslation();
+  const registersSchema =Yup.object().shape({
+    firstName: Yup
+      .string()
+      .min(3, t('Thenameisshort'))
+      .max(10, t('Thenameislong'))
+      .required(t('Required')),
+      LastName: Yup.string()
+      .min(3, t('Thenameisshort'))
+      .max(10, t('Thenameislong'))
+      .required(t('Required')),
+      email: Yup
+        .string()
+        .min(8, t('Theemailisshort') )
+        .max(40, t('Theemailislong'))
+        .email(t('Enteravalidemailaddress'))
+        .required(t('EmailisRequired')),
+        password: Yup
+        .string()
+        .min(8, t('Thepasswordisshort'))
+        .max(25, t('Thepasswordislong'))
+        .required(t('passwordisRequired')),
+  });
   const dispatch = useDispatch()
   const navigate = useNavigate()
         const formik = useFormik({

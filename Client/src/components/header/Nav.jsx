@@ -29,12 +29,12 @@ function CNav({scrolled}) {
   const Navigate =useNavigate()
   const cookie = Cookie()
   const { t } = useTranslation();
-  const logout = ()=>{
+  const logout = useCallback(()=>{
     localStorage.removeItem("isLoggedIn");
     localStorage.removeItem("userid");
     cookie.remove('cookie-user');
     window.location.reload()  
-  }
+  },[isLoggedIn])
   const handlearray ={returnObjects: true }
   const subdropdownmakeup =()=>setsubDropdown(t('subdropdownmakeup',handlearray))
   const subdropdownperfume =()=>setsubDropdown(t('subdropdownPerfume',handlearray))
@@ -43,7 +43,7 @@ function CNav({scrolled}) {
     <>
       <Navbar className={scrolled?'wrapper-nav-scroll p-0':"wrapper-nav p-0"} expand="lg">
       <Container className={scrolled&&'container-nav-scroll'}>
-      <NavbarMobile/>
+      <NavbarMobile logout={logout}/>
           <Nav className='container-nav-item m-0' >
             <div className='w-100 d-flex justify-content-between'>
               <div className='container-mian-menu'>

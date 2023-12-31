@@ -1,5 +1,5 @@
 import { Link, useNavigate} from 'react-router-dom';
-import React, {useState,useCallback } from 'react';
+import React, {useCallback, useState } from 'react';
 import makeup from "../../assets/header/imgMakeup.png"
 import Perfume from "../../assets/header/imgPerfume.png"
 import Care from "../../assets/header/imgCare.png"

@@ -31,6 +31,7 @@ const NavbarMobile = ({logout}) => {
     const [dataSubItem, setdataSubItem]=useState([])
     const [titleitem, settitleitem]=useState("")
     const {t,i18n} =useTranslation()
+    const isLoggedIn =JSON.parse(localStorage.getItem("isLoggedIn"));
     const [isChecked, setIsChecked] = useState(i18n.language);
     const handlearrayTr ={ returnObjects: true }
     const html = document.querySelector('html')

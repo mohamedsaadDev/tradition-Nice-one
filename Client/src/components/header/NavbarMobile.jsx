@@ -22,8 +22,7 @@ import { useTranslation } from 'react-i18next';
 import saudi from "../../assets/header/Saudi.png"
 import aribcimg from "../../assets/header/Saudi.png"
 import Englishimg from "../../assets/header/en.png"
-//import ModelCountry from '../../pages/ModelCountry/ModelCountry';
-const NavbarMobile = () => {
+const NavbarMobile = ({logout}) => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -156,9 +155,12 @@ useEffect(()=>{
                     <>
                     <div>
                         <ul className='p-0'>
-                            <Link to='/'><li  className='item-menu-mobile'>  <i className="fa-solid fa-house mx-2"></i> {t('Home')}</li></Link>
-                            <Link onClick={()=>setShow(false)} to="/login"><li className='item-menu-mobile'>{t('login')}</li></Link>
-                            <Link onClick={()=>setShow(false)} to="register"><li className='item-menu-mobile'>{t('Register')}</li></Link>
+                            <Link to='/'><li className='item-menu-mobile'> <i className="fa-solid fa-house mx-2"></i> {t('Home')}</li></Link>
+                            {
+                                isLoggedIn? <li onClick={()=>logout()} className='item-menu-mobile'>{t('logout')} </li> :<>
+                                <Link onClick={()=>setShow(false)} to="/login"><li className='item-menu-mobile'>{t('login')}</li></Link>
+                                <Link onClick={()=>setShow(false)} to="register"><li className='item-menu-mobile'>{t('Register')}</li></Link></>
+                            }
                         </ul>
                     </div>
                     <div className='wrapper-menu-mobile m-0'>

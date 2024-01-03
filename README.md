@@ -21,6 +21,7 @@ This project is an e-commerce website that aims to provide a platform for buying
 1. Download the project to your computer using the following command:https://github.com/mohamedsaadDev/tradition-Nice-one.git
 2.  Go to the directory of the project and install the dependencies: npm install.
 3.  Run the local server:npm run server.
+4.  Run the local client:npm start
 
 ## Important links
 - **Repository on GitHub**: https://github.com/mohamedsaadDev/tradition-Nice-one

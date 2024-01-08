@@ -4,7 +4,7 @@ const cors = require('cors')
 const httpStatusText = require('./utils/httpStatusTexr')
 const app = express()
 const path = require('path')
-app.use(cors({origin:"https://tradition-nice-one-client.vercel.app"}))
+app.use(cors({origin:"https://imitation-nice-one-client.vercel.app"}))
 //start connect database 
 const connectDB = require('./config/dbconn')
 connectDB()
